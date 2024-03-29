@@ -25,22 +25,26 @@ hr{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
     
 }
 .main_nav{
-margin: auto;
-max-width: 80%;
-justify-content: space-between;
-align-items: center;
-gap: 4px;
-display: flex;
-flex-direction: row;
-padding: 5px;
+    margin: auto;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px; */
 }
 .main_nav a{
-    padding: 20px;
+    padding-left: 20px;
     font-weight: 500;
     color: #4a5568;
+}
+.menu a{
+    padding-right: 2rem;
 }
 .loginbtn{
    background-color: #e1e7fd;
@@ -51,11 +55,15 @@ padding: 5px;
    font-size: 1rem;
    font-weight: 500;
 }
+.navbtn{
+    display: flex;
+    gap: 10px;
+}
 .noteesbtn{
     background-color: #4f46e5;
    border: 0px;
    color: white;
-   padding: 11px 16px;
+   padding: 11px 18px;
    border-radius: 5px;
    font-size: 1rem;
    font-weight: 500;
@@ -63,7 +71,7 @@ padding: 5px;
 .main_section{
     width: 100%;
     height: auto;
-    margin-top: 5rem;
+    margin-top: 3.7rem;;
     align-items: center;
     flex-direction: column;
     display: flex;
@@ -79,6 +87,7 @@ padding: 5px;
 }
 .top_header{
     flex-grow: 3;
+    margin-top: 2rem;
     
    
 }
@@ -108,8 +117,8 @@ padding: 5px;
     color: #4d5562;
     font-size: 18px; 
     text-align: start;
-    max-width: 500px; 
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.1px;
 }
 .voiceAi{
     background-image: linear-gradient(to right, #ff00ac , yellow);
@@ -191,6 +200,8 @@ padding: 5px;
     margin-top: 15px;
     border: none;
     color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 .fa-repeat {
     font-size: 30px;
@@ -208,13 +219,14 @@ padding: 5px;
     color: orange;
   }
 .img_slider{
-    margin-top: 3rem;
+    margin-top: 4rem;
+    opacity: 0.7;
 }
 /* ///////////////// */
-.details_se{
-    margin-top: 6rem;
+.details_sec{
+    margin-bottom: 5rem;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     flex-direction: row;
     gap: 5rem;
     max-width: 1080px; 
@@ -224,7 +236,7 @@ padding: 5px;
     
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right:auto ;
 }
@@ -240,11 +252,21 @@ padding: 5px;
 }
 .work h1{
     margin: 4rem 0rem 4rem 0rem;
+   color:#4b5563;
+   font-weight: 500;
+   font-size: 30px;
 }
 .details_card{
     display: flex;
     flex-direction: row; 
     gap: 7rem;      
+}
+.details_card h3{
+    color: #818cf8; text-align: start; font-size: 24px;
+}
+.details_card p{
+    text-align: start;
+    line-height: 22px
 }
 .video{
     width: 100%;
@@ -254,7 +276,7 @@ padding: 5px;
     box-shadow: 4px 4px 6px 4px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 .note2btn{
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
@@ -281,6 +303,7 @@ padding: 5px;
     flex-direction: row;
     align-items: center;
     gap: 48px ;
+    margin-top: 2rem;
     
 
 }
@@ -304,6 +327,7 @@ padding: 20px;
     font-weight: 400;
     text-align: start;
     color: #6b7280;
+    line-height: 20px;
 
 }
 .card h3{
@@ -317,18 +341,25 @@ margin-right: 3px;
 .demo_video{
     margin: auto;
     width: 900px;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 .heading h1{
 text-align: center;
+color: #4b5563;
+font-weight: 500;
 
 }
 .heading p{
     text-align: center;
-    margin: 45px 15px;
-    line-height: 30px;
+    margin: 0px 15px;
+    line-height: 25px;
     letter-spacing: 0.5px;
 }
+.heading span{
+    color: #9ca3af;
+    font-size: 12px;
+}
+
 .review{
     max-width: 1200px;
     display: flex;
@@ -496,7 +527,7 @@ text-align: center;
     width: 100%;
     opacity: 1;
     color: #4b5563;
-    margin-bottom: 12px;
+    margin-bottom: 2rem;
     
 }
 .down_icon i{
@@ -504,6 +535,16 @@ text-align: center;
     right: 9px;
     top: 13px;
     font-size: 20px;
+}
+.faq{
+    margin-top: 64px;
+}
+.faq h2{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 30px;
+    color: #4b5563;
+    font-weight: 500;
 }
 .faq_element h4{
     margin: 0px;
@@ -518,7 +559,7 @@ text-align: center;
     overflow: hidden;
     background-color: #4f46e5;
     color: #a5b4fc;
-    margin-top: 4rem;
+    margin-top: 8rem;
     border-radius: 10px;
     display: flex;
     gap: 4px;
@@ -570,6 +611,7 @@ text-align: center;
     display: flex;
     /* gap: 32px  */
     justify-content: space-around;
+    margin-top: 1.5rem;
 }
 .social_media i{
     font-size: 20px;
@@ -577,15 +619,16 @@ text-align: center;
 .links{
     display: flex;
     flex-direction: column;
-    line-height: 20px;  
+    line-height: 25px;  
     text-align: start;
 }
 
 .learn_more{
     display: flex;
     flex-direction: column;
-    line-height: 20px;
+    line-height: 25px;
     text-align: start;
+
 }
 .footer_menu p{
     color: white;
@@ -605,6 +648,15 @@ text-align: center;
 }
 .contact p{
     font-size: 12px;
+}
+.contact h3{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.legal a{
+    font-size: 12px;
+
 }
 .legal{
     display: flex;
