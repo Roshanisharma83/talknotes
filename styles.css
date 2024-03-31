@@ -28,6 +28,9 @@ hr{
     padding: 1rem;
     
 }
+.topnav .icon {
+    display: none;
+  }
 .main_nav{
     margin: auto;
     max-width: 1200px;
@@ -662,3 +665,105 @@ font-weight: 500;
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .main_section{
+        display: block;
+    }
+    .cards{
+        display: block;
+    }
+    .video_demo{
+        width: 300px !important;
+    }
+    .sub_section{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .top_header h1{
+        font-size: 30px;
+        line-height: 1.5;
+        padding-right: 88px;
+    }
+    .action{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .details_card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .review{
+        display: flex;
+        flex-direction: column;
+    }
+    .demo_video{
+        width: 100%;
+    }
+    .demo_scr{
+        padding: 40px;
+    max-width: 230px;
+    height: 500px;
+    }
+    .img_slider{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .img_slider img{
+        width: 100px;
+    }
+    .menu{
+        top: 8rem;
+    position: absolute;
+    left: 107px;
+    /* z-index: 11; */
+    background: white;
+    width: 100%;
+  }
+  .note button{
+    width: 100% !important;
+   }
+   .details_sec{
+    padding: 0px 42px;
+   }
+
+}
+
+  
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .topnnavbarav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .main_section{
+        display: block;
+    }
+    .video_demo video{
+        width: 400px !important;
+    }
+    .price_box{
+        display: block;
+    }
+    .note_box img{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+  }
