@@ -1,10 +1,15 @@
-body{
+
+*,html{
     margin: 0px ;
-    padding: opx;
+    padding: 0px;
     box-sizing: border-box;
+}
+body, html{
     font-family: sans-serif ;
+    width: 100%;
    
 }
+
 hr{
     border-width: 2px;
     width: auto;
@@ -12,6 +17,9 @@ hr{
     opacity: 0.1;
     border-color: #f3f4f6;
     
+}
+.icon{
+    display: none;
 }
 .wrapper{
     display: flex;
@@ -28,6 +36,8 @@ hr{
     padding: 1rem;
     
 }
+
+
 .topnav .icon {
     display: none;
   }
@@ -210,7 +220,7 @@ hr{
     font-size: 30px;
 }
 .fa-microphone{
-    font-size: 32px;
+    font-size: 20px;
 }
 .fa-times{
     font-size: 30px;
@@ -278,6 +288,12 @@ hr{
     padding: 20px;
     box-shadow: 4px 4px 6px 4px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+.video video{
+    width: 100%;
+}
+.record_voice{
+    width: 390px
+}
 .note2btn{
     margin-top: 2rem;
     margin-left: auto;
@@ -343,9 +359,12 @@ margin-right: 3px;
 }
 .demo_video{
     margin: auto;
-    width: 900px;
     margin-top: 5rem;
 }
+.video_demo video{
+    width: 100%;
+}
+
 .heading h1{
 text-align: center;
 color: #4b5563;
@@ -398,7 +417,14 @@ font-weight: 500;
     display: flex;
     font-size: 12px;
     padding: 0px 10px;
+    margin-top: 44px 
    
+}
+.rating2{
+    display: flex;
+    font-size: 12px;
+    padding: 0px 10px;
+    margin-top: 58px 
 }
 .quote_icon i{
     position: absolute;
@@ -589,6 +615,9 @@ font-weight: 500;
     cursor: pointer;
     font-size: 18px;
 }
+.detail_text{
+    width: 390px
+}
 .footer{
     /* align-items: flex-start; */
     flex-direction: row;
@@ -665,14 +694,24 @@ font-weight: 500;
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width: 600px) {
+.mobile_only{
+    display: none;
+}
+/* @media only screen 
+    and (width: 375px) 
+    and (height: 667px) 
+    and (-webkit-device-pixel-ratio: 2) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
       display: block;
     }
     .main_section{
-        display: block;
+       
+        padding: 0px 70px;
+    }
+    .logo img{
+        width: 100px !important;
     }
     .cards{
         display: block;
@@ -722,7 +761,7 @@ font-weight: 500;
         top: 8rem;
     position: absolute;
     left: 107px;
-    /* z-index: 11; */
+    
     background: white;
     width: 100%;
   }
@@ -731,6 +770,18 @@ font-weight: 500;
    }
    .details_sec{
     padding: 0px 42px;
+   }
+   .video{
+    width: auto;
+   }
+   .record_voice{
+    width: 300px;
+   }
+   .record_voice h3{
+     text-align: center;
+   }
+   .record_voice p{
+    text-align: center;
    }
 
 }
@@ -766,4 +817,190 @@ font-weight: 500;
         display: flex;
         flex-direction: column;
     }
-  }
+  } */
+  .hamburger{
+    display:none;
+}
+  @media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3)  { 
+        .navbar a:not(:first-child), .navbtn {
+            display: none;
+          }
+          .navbar a.icon {
+            float: right;
+            display: block;
+          }
+          .navbar.responsive {position: relative;}
+          .navbar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .navbar.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            padding-bottom: 31px;
+            font-size: 25px;
+            margin-top: 20px;
+            
+          }
+          .icon{
+            padding-right: 18px;
+          }
+          /* .menu a{
+            margin-top: 35px;
+          } */
+          
+        .main-nav{
+            display:grid;
+        }
+        .main-nav li a{
+            float:right;
+        }
+        .navbar{
+            height: auto;
+        }
+        .main-nav{
+            height: auto;
+            display: block;
+        }
+        .menu{
+            width: 100%;
+           display: block
+        }
+          
+          
+    .main_section{
+       margin-top: 2rem;
+       padding: 0px 7vw;
+    }
+    .logo img{
+        width: 100px !important;
+    }
+    .top_header{
+        margin: 0px;
+    }
+    .top_header img{
+        width: 250px;
+    }
+    .top_header h1{
+        font-size: 30px;
+        line-height: 1.5;
+        /* padding-right: 88px; */
+    }
+    .top_header p{
+        padding-right: 1rem;
+    }
+    .demo_scr{
+        padding: 13px;
+        max-width: 320px;
+        height: 500px;
+        }
+    .demo{
+        padding-top: 15px;
+    }
+    .time{
+        padding: 50px 0px 0px;
+    }
+    .sub_section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cards{
+        display: block;
+    }
+    .action{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .details_card{
+        display: flex; 
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 32px;
+        text-align: right;
+    }
+    .card h3{
+        padding-bottom: 8px;
+    }
+    .review{
+    display: flex;
+    flex-direction: column;
+    }
+    .review_card{
+        width: 100%;
+        padding: 20px;
+    }
+    .rating{
+        margin: 0px;
+    }
+    .price_box{
+        display: flex;
+    flex-direction: column;
+    }
+    .note_box img{
+        display: none;
+    }
+    .demo_video{
+    width: 100%;
+    }
+    
+    .img_slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .img_slider img{
+     width: 100px;
+    }
+    .menu{
+     top: 7rem;
+     position: absolute;
+     left: 0px;
+     background: white;
+     /* width: 100%; */
+     /* height: 500px; */
+   }
+  .note button{
+    width: 100% !important;
+   }
+   /* .details_sec{
+    padding: 0px 42px;
+   } */
+   
+   .record_voice h3{
+     text-align: center;
+   }
+   .record_voice p{
+    text-align: center;
+   
+    }
+    .footer_menu{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .links{
+        text-align: center;
+    }
+    .learn_more{
+        text-align: center; 
+    }
+    .contact{
+        text-align: center; 
+    }
+    .video{
+        padding: 0px;
+    }
+    .detail_text{
+        width: 100%;
+    }
+    .record_voice{
+        width: 100%;
+    }
+}

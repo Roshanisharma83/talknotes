@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Talk_Note</title>
   <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script src="https://kit.fontawesome.com/b36eab8205.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -13,19 +13,21 @@
 <body>
   <div class="wrapper">
     <!-- nave manu -->
-    <nav class="navbar" id="myTopnav">
+    
+    </nav>
+    <nav class="navbar responsive" id="myTopnav">
       <div class="main_nav">
         <a class="logo">
           <img src="./images/logo-color.svg" alt="img" width="150" ; />
         </a>
         <div class="menu">
+          
           <a>Try it</a>
           <a>How it Work</a>
           <a>Use cases</a>
           <a>Pricing</a>
-          <a>FAQ</a>
-          
-        </div>
+          <a>FAQ</a> 
+        </div> 
         <div class="navbtn">
           <a><button class="loginbtn">Login</button></a>
           <button class="noteesbtn">
@@ -33,13 +35,11 @@
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
         </div>
-        
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
       </a>
-      
-    </nav>
+    </nav>    
     <!-- main section -->
     <main class="main_section">
       <div class="sub_section">
@@ -56,6 +56,21 @@
             and let the AI transcribe, clean up and structure it for you.
             Available on web, iOS and Android.
           </p>
+          <!-- <div class="mobile_only">
+            <ul> 
+              <li><i class="fa-solid fa-check"></i>web and mobile app</li>
+              <li><i class="fa-solid fa-check"></i>work in 50+ languages</li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>Trusted by +3000 happy users</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </li>
+            </ul>
+          </div> -->
 
           <div class="note">
             <button>
@@ -115,11 +130,11 @@
           <h1>How does it work?</h1>
           <div class="details_card">
             <div class="video">
-              <video width="400" height="240" autoplay>
+              <video autoplay>
                 <source src="./video/step-1.mp4" type="video/mp4" />
               </video>
             </div>
-            <div style="width: 390px">
+            <div class="record_voice" >
               <h3 style="color: #818cf8; text-align: start">
                 1. Record Your Voice
               </h3>
@@ -135,7 +150,7 @@
 
         <div class="work">
           <div class="details_card">
-            <div style="width: 390px">
+            <div class="detail_text">
               <h3>
                 2. Choose a style
               </h3>
@@ -146,7 +161,7 @@
               </p>
             </div>
             <div class="video">
-              <video width="400" height="240" autoplay>
+              <video autoplay>
                 <source src="./video/step2.mp4" type="video/mp4" />
               </video>
             </div>
@@ -158,11 +173,11 @@
         <div class="work">
           <div class="details_card">
             <div class="video">
-              <video width="400" height="240" autoplay>
+              <video height="240" autoplay>
                 <source src="./video/step3.mp4" type="video/mp4" />
               </video>
             </div>
-            <div style="width: 390px">
+            <div class="detail_text">
               <h3>
                 3. Edit & organize
               </h3>
@@ -277,7 +292,7 @@
 
         </div>
         <div class="video_demo">
-          <video width="900" height="auto" ; controls autoplay; style="border-radius: 16px">
+          <video height="auto" ; controls autoplay; style="border-radius: 16px">
             <source src="./video/Video.mp4" type="video/mp4" />
           </video>
           <div class="note2btn">
@@ -295,7 +310,7 @@
           <h6>Outstanding Quality</h6>
           <p>The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably
             more expensive professional transcription tools, the results are dimensions better.</p>
-          <div class="rating" style="margin-top: 44px ">
+          <div class="rating" >
 
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -311,7 +326,7 @@
           <h6>A huge time-saver</h6>
           <p>This is really great app and a huge time-saver. I like that the emails are in my personal style unlike
             other ai apps where they are really formulaic</p>
-          <div class="rating" style="margin-top: 58px ">
+          <div class="rating2" >
 
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -518,14 +533,22 @@
       </div>
     </div>
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
-      }
+      function toggleMenu() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+  //     function toggleMenu() {
+  // var x = document.getElementById("myTopnav").querySelector(".menu");
+  // if (x.style.display === "flex") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "flex";
+  // }
+//}
     </script>
 </body>
 
