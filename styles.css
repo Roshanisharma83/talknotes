@@ -116,6 +116,7 @@ hr{
 .demo p{
     text-align: center;
     color: #6b7280;
+    padding: 22px;
 }
 .action{
     color: #626ae9 !important;
@@ -274,10 +275,40 @@ hr{
     flex-direction: row; 
     gap: 7rem;      
 }
-.details_card h3{
+.details_card1{
+    display: flex;
+    flex-direction: row; 
+    gap: 7rem; 
+    margin-top: 3rem;
+}
+.details_card2{
+    display: flex;
+    flex-direction: row; 
+    gap: 7rem; 
+    margin-top: 3rem;
+}
+.details_card  h3{
     color: #818cf8; text-align: start; font-size: 24px;
 }
+.details_card1 h3{
+    color: #818cf8;
+     text-align: start;
+      font-size: 24px;
+}
+.details_card2 h3{
+    color: #818cf8;
+    text-align: start; 
+    font-size: 24px;
+}
 .details_card p{
+    text-align: start;
+    line-height: 22px
+}
+.details_card1 p{
+    text-align: start;
+    line-height: 22px
+}
+.details_card2 p{
     text-align: start;
     line-height: 22px
 }
@@ -697,134 +728,210 @@ font-weight: 500;
 .mobile_only{
     display: none;
 }
-/* @media only screen 
-    and (width: 375px) 
-    and (height: 667px) 
-    and (-webkit-device-pixel-ratio: 2) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-    .main_section{
-       
-        padding: 0px 70px;
-    }
-    .logo img{
-        width: 100px !important;
-    }
-    .cards{
+@media (min-width: 268px) and (max-width: 1023px){
+   
+    .navbar a:not(:first-child), .navbtn {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
         display: block;
+      }
+      .navbar.responsive {position: relative;}
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding-bottom: 31px;
+        font-size: 25px;
+        margin-top: 20px;
+        
+      }
+      .icon{
+        padding-right: 18px;
+      }
+      /* .menu a{
+        margin-top: 35px;
+      } */
+      
+    .main-nav{
+        display:grid;
     }
-    .video_demo{
-        width: 300px !important;
+    .main-nav li a{
+        float:right;
     }
-    .sub_section{
-        display: flex;
-        flex-direction: column;
-        padding: 0px 20px;
+    .navbar{
+        height: auto;
     }
-    .top_header h1{
-        font-size: 30px;
-        line-height: 1.5;
-        padding-right: 88px;
-    }
-    .action{
-        font-size: 30px;
-        line-height: 1.5;
-    }
-    .details_card{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .review{
-        display: flex;
-        flex-direction: column;
-    }
-    .demo_video{
-        width: 100%;
-    }
-    .demo_scr{
-        padding: 40px;
-    max-width: 230px;
-    height: 500px;
-    }
-    .img_slider{
-        display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    .img_slider img{
-        width: 100px;
+    .main-nav{
+        height: auto;
+        display: block;
     }
     .menu{
-        top: 8rem;
-    position: absolute;
-    left: 107px;
-    
-    background: white;
+        width: 100%;
+       display: block
+    }
+      
+      
+.main_section{
+   margin-top: 2rem;
+   padding: 0px 7vw;
+}
+.logo img{
+    width: 100px !important;
+}
+.top_header{
+    margin: 0px;
+}
+.top_header img{
+    width: 250px;
+}
+.top_header h1{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.top_header p{
+    padding-right: 1rem;
+}
+.demo_scr{
+    padding: 13px;
+    max-width: 320px;
+    height: 500px;
+    }
+.demo{
+    padding-top: 15px;
+}
+.time{
+    padding: 50px 0px 0px;
+}
+.sub_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    display: block;
+}
+.action{
+    font-size: 30px;
+    line-height: 1.5;
+}
+.details_card{
+    display: flex; 
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 32px;
+    text-align: right;
+}
+.details_card1{
+    display: flex;
+    flex-direction: column; 
+    gap: 7rem; 
+    margin-top: 3rem;
+}
+.details_card2{
+    display: flex;
+    flex-direction: column-reverse; 
+    gap: 7rem; 
+    margin-top: 3rem;
+}
+.card h3{
+    padding-bottom: 8px;
+}
+.review{
+display: flex;
+flex-direction: column;
+}
+.review_card{
     width: 100%;
-  }
-  .note button{
-    width: 100% !important;
-   }
-   .details_sec{
-    padding: 0px 42px;
-   }
-   .video{
-    width: auto;
-   }
-   .record_voice{
-    width: 300px;
-   }
-   .record_voice h3{
-     text-align: center;
-   }
-   .record_voice p{
+    padding: 20px;
+}
+.rating{
+    margin: 0px;
+}
+.price_box{
+    display: flex;
+flex-direction: column;
+}
+.note_box img{
+    display: none;
+}
+.demo_video{
+width: 100%;
+}
+
+.img_slider{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.img_slider img{
+ width: 100px;
+}
+.menu{
+ top: 7rem;
+ position: absolute;
+ left: 0px;
+ background: white;
+ /* width: 100%; */
+ /* height: 500px; */
+}
+.note button{
+width: 100% !important;
+}
+/* .details_sec{
+padding: 0px 42px;
+} */
+
+.record_voice h3{
+ text-align: center;
+}
+.record_voice p{
+text-align: center;
+
+}
+.footer_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.links{
     text-align: center;
-   }
+}
+.learn_more{
+    text-align: center; 
+}
+.contact{
+    text-align: center; 
+}
+.video{
+    padding: 0px;
+}
+.detail_text{
+    width: 100%;
+}
+.record_voice{
+    width: 100%;
+}
+.note_box{
+    margin-top: 0px;
+}
 
 }
 
   
   
-  @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .topnnavbarav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navbar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .main_section{
-        display: block;
-    }
-    .video_demo video{
-        width: 400px !important;
-    }
-    .price_box{
-        display: block;
-    }
-    .note_box img{
-        display: none;
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-    }
-  } */
-  .hamburger{
-    display:none;
-}
-  @media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3)  { 
+  
+
+/* @media only screen 
+  and (max-device-width: 600px) 
+  and (-webkit-device-pixel-ratio: 3) { 
         .navbar a:not(:first-child), .navbtn {
             display: none;
           }
@@ -850,9 +957,7 @@ font-weight: 500;
           .icon{
             padding-right: 18px;
           }
-          /* .menu a{
-            margin-top: 35px;
-          } */
+          
           
         .main-nav{
             display:grid;
@@ -889,7 +994,7 @@ font-weight: 500;
     .top_header h1{
         font-size: 30px;
         line-height: 1.5;
-        /* padding-right: 88px; */
+        
     }
     .top_header p{
         padding-right: 1rem;
@@ -963,15 +1068,12 @@ font-weight: 500;
      position: absolute;
      left: 0px;
      background: white;
-     /* width: 100%; */
-     /* height: 500px; */
+     
    }
   .note button{
     width: 100% !important;
    }
-   /* .details_sec{
-    padding: 0px 42px;
-   } */
+  
    
    .record_voice h3{
      text-align: center;
@@ -1003,4 +1105,4 @@ font-weight: 500;
     .record_voice{
         width: 100%;
     }
-}
+} */
