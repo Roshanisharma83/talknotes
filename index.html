@@ -8,13 +8,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <script src="https://kit.fontawesome.com/b36eab8205.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
 </head>
 
 <body>
   <div class="wrapper">
     <!-- nave manu -->
-    
-    </nav>
+    <!--  -->
+    <!-- <div class="navbar responsive" id="myTopnav">
+      <a class="logo">
+        <img src="./images/logo-color.svg" alt="img" width="150" ; />
+      </a>
+      <nav class="menu">
+          <ul class="nav--ul__one">
+              <li ><a href="#">Try it</a></li>
+              <li ><a href="#">How it work</a></li>
+              <li ><a href="#">Use cases</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul class="navbtn">
+              <li ><a><button class="loginbtn">Login</button></a></li>
+              <li ><a href="#"><button class="noteesbtn">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i> Get Talknotes
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button></a></li>
+          </ul>
+      </nav>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+  </div> -->
+    <!--  -->
     <nav class="navbar responsive" id="myTopnav">
       <div class="main_nav">
         <a class="logo">
@@ -22,11 +51,11 @@
         </a>
         <div class="menu">
           
-          <a>Try it</a>
-          <a>How it Work</a>
-          <a>Use cases</a>
-          <a>Pricing</a>
-          <a>FAQ</a> 
+          <a href="#">Try it</a>
+          <a href="#">How it Work</a>
+          <a  href="#">Use cases</a>
+          <a  href="#">Pricing</a>
+          <a  href="#">FAQ</a> 
         </div> 
         <div class="navbtn">
           <a><button class="loginbtn">Login</button></a>
@@ -42,16 +71,16 @@
     </nav>    
     <!-- main section -->
     <main class="main_section">
-      <div class="sub_section">
+      <div class="sub_section animate__animated animate__fadeInDown animate__delay-0.3s">
         <div class="top_header">
-          <img src="./images/top-post.svg" alt="img" width="250" />
+          <img src="./images/top-post.svg" alt="img" width="250"/>
           <h1>
             Turn messy thoughts into <br /><span class="action">actionable
             </span>
             notes. Fast.
           </h1>
           <h2 class="voiceAi">The #1 AI. voice note app</h2>
-          <p>
+          <p >
             Turn hours of note taking into minutes. Just record a voicenote,
             and let the AI transcribe, clean up and structure it for you.
             Available on web, iOS and Android.
@@ -117,28 +146,28 @@
         </div>
       </div>
       <div class="img_slider">
-        <img src="./images/medium.svg" alt="img" />
-        <img src="./images/hackers.svg" alt="img" />
-        <img src="./images/foundr.svg" alt="img" />
-        <img src="./images/scoopit.svg" alt="" />
+        <img src="./images/medium.svg" alt="img" class="animate__animated animate__rotateInDownLeft animate__delay-2s"/>
+        <img src="./images/hackers.svg" alt="img" class="animate__animated animate__rotateInDownLeft animate__delay-2s"/>
+        <img src="./images/foundr.svg" alt="img" class="animate__animated animate__rotateInDownLeft animate__delay-2s"/>
+        <img src="./images/scoopit.svg" alt="" class="animate__animated animate__rotateInDownLeft animate__delay-2s"/>
       </div>
 
       <!-- ////////////// -->
       <div class="details_sec">
         <div class="work">
           <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
-          <h1>How does it work?</h1>
+          <h1 class="animate__animated animate__rotateIn animate__delay-2s">How does it work?</h1>
           <div class="details_card">
-            <div class="video">
+            <div class="video animate__animated animate__slideInLeft animate__delay-2">
               <video autoplay>
-                <source src="./video/step-1.mp4" type="video/mp4" />
+                <source src="./video/step-1.mp4" type="video/mp4"/>
               </video>
             </div>
             <div class="record_voice" >
               <h3 style="color: #818cf8; text-align: start">
                 1. Record Your Voice
               </h3>
-              <p style="text-align: start; line-height: 22px">
+              <p style="text-align: start; line-height: 22px" class=" animate__animated animate__zoomIn animate__delay-2 ">
                 Speak your thoughts & ideas. Don't stress about format,
                 grammar, pauses or mistakes, just talk naturally, we handle
                 the rest.
@@ -154,15 +183,15 @@
               <h3>
                 2. Choose a style
               </h3>
-              <p>
+              <p class="animate__animated animate__zoomIn animate__delay-2 ">
                 TalkNotes will transcribe your voice into any kind of content.
                 Transcript, Task list, journal entry, Blog post... Your
                 creativity is the only limit!
               </p>
             </div>
-            <div class="video">
+            <div class="video animate__animated animate__slideInRight animate__delay-2">
               <video autoplay>
-                <source src="./video/step2.mp4" type="video/mp4" />
+                <source src="./video/step2.mp4" type="video/mp4"/>
               </video>
             </div>
           </div>
@@ -172,7 +201,7 @@
 
         <div class="work">
           <div class="details_card2">
-            <div class="video">
+            <div class="video animate__animated animate__slideInLeft animate__delay-2">
               <video height="240" autoplay>
                 <source src="./video/step3.mp4" type="video/mp4" />
               </video>
@@ -181,7 +210,7 @@
               <h3>
                 3. Edit & organize
               </h3>
-              <p>
+              <p class="animate__animated animate__delay-2 animate__zoomIn">
                 Tweak your note to your liking. Create folders, add tags,
                 change the format, edit the transcript or share it with
                 others.
@@ -209,7 +238,7 @@
         </h1>
         <div class="use_cases">
           <div class="cards">
-            <div class="card">
+            <div class="card animate__animated animate__delay-2 animate__flipInX">
               <h3>
                 <i class="fa fa-lightbulb-o" aria-hidden="true"></i>Brainstorming
               </h3>
@@ -219,7 +248,7 @@
                 idea without missing a beat.
               </p>
             </div>
-            <div class="card">
+            <div class="card animate__animated animate__delay-2 animate__flipInX">
               <h3>
                 <i class="fa fa-pencil" aria-hidden="true"></i> Content
                 Creation
@@ -231,7 +260,7 @@
               </p>
 
             </div>
-            <div class="card">
+            <div class="card animate__animated  animate__delay-2 animate__flipInX">
               <h3><i class="fa fa-book" aria-hidden="true"></i>Journaling</h3>
               <p>
                 Document your personal journey with ease! Voice journaling
@@ -239,7 +268,7 @@
                 without the need to type.
               </p>
             </div>
-            <div class="card">
+            <div class="card animate__animated animate__delay-2 animate__flipInX">
               <h3>
                 <i class="fa fa-microphone" aria-hidden="true"></i>Interviews
               </h3>
@@ -250,7 +279,7 @@
                 your recorded conversations.
               </p>
             </div>
-            <div class="card">
+            <div class="card animate__animated animate__delay-2 animate__flipInX">
               <h3>
                 <i class="fa fa-commenting" aria-hidden="true"></i>Meetings
               </h3>
@@ -259,7 +288,7 @@
                 them instantly, and never miss an important detail again.
               </p>
             </div>
-            <div class="card">
+            <div class="card animate__animated  animate__delay-2 animate__flipInX">
               <h3>
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>Educational Notes
               </h3>
@@ -305,7 +334,7 @@
       </div>
       <!-- review card -->
       <div class="review">
-        <div class="review_card">
+        <div class="review_card animate__animated animate__fadeInDown animate__delay-0.5s">
           <div class="quote_icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
           <h6>Outstanding Quality</h6>
           <p>The quality of the transcriptions is fantastic and require virtually no rework. Compared to incomparably
@@ -321,7 +350,7 @@
             <span style="color: #d1d5db; font-size: 13px;">Germany</span>
           </div>
         </div>
-        <div class="review_card">
+        <div class="review_card animate__animated animate__fadeInDown animate__delay-0.5s">
           <div class="quote_icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
           <h6>A huge time-saver</h6>
           <p>This is really great app and a huge time-saver. I like that the emails are in my personal style unlike
@@ -337,7 +366,7 @@
             <span style="color: #d1d5db; font-size: 13px;">New Zealand</span>
           </div>
         </div>
-        <div class="review_card">
+        <div class="review_card animate__animated animate__fadeInDown animate__delay-0.5s">
           <div class="quote_icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
           <h6>Had been looking for something exactly like this!</h6>
           <p>I had been looking for a while for exactly this type of app, and I've yet to find one that works as
@@ -413,54 +442,54 @@
       <!-- //// F.A.Q///// -->
       <div class="faq">
         <h2>F.A.Q</h2>
-        <div class="faq_element">
+        <div class="faq_element animate__animated  animate__delay-2 animate__pulse ">
           <h4>Is there a mobile app?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>How accurate is the voice-to-text conversion?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>How accurate is the voice-to-text conversion?</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>Can I upload my own audio files?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>Can I edit the text once it's converted?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>Do I need an internet connection to use TalkNotes?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>What about privacy?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>How can I contact support if I have questions or need help?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>Is there an API?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
             Store.</p>
         </div>
-        <div class="faq_element">
+        <div class="faq_element  animate__animated  animate__delay-2 animate__pulse ">
           <h4>Can I use TalkNotes in different languages?</h4>
           <span class="down_icon"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
           <p>Yes, Talknotes is available for both iOS and Android. You can download it from the App Store or Google Play
@@ -541,14 +570,7 @@
     x.className = "navbar";
   }
 }
-  //     function toggleMenu() {
-  // var x = document.getElementById("myTopnav").querySelector(".menu");
-  // if (x.style.display === "flex") {
-  //   x.style.display = "none";
-  // } else {
-  //   x.style.display = "flex";
-  // }
-//}
+
     </script>
 </body>
 
