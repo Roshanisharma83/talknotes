@@ -101,8 +101,8 @@
             </ul>
           </div> -->
 
-          <div class="note">
-            <button>
+          <div class="note" >
+            <button onclick="myFun()" class="notebtn"  id="myNotes">
               <i class="fa fa-arrow-right" aria-hidden="true"></i> Get
               Talknotes <i class="fa fa-plus" aria-hidden="true"></i>
             </button>
@@ -219,7 +219,7 @@
           </div>
         </div>
         <div class="note2btn">
-          <button>
+          <button >
             <i class="fa fa-arrow-right" aria-hidden="true"></i> Get Talknotes
             <i class="fa fa-plus" aria-hidden="true"></i>
           </button>
@@ -325,7 +325,7 @@
             <source src="./video/Video.mp4" type="video/mp4" />
           </video>
           <div class="note2btn">
-            <button>
+            <button class="note2btnv" id="myBtn" onclick='myFunction()'>
               <i class="fa fa-arrow-right" aria-hidden="true"></i> Get Talknotes
               <i class="fa fa-plus" aria-hidden="true"></i>
             </button>
@@ -571,6 +571,21 @@
   }
 }
 
+////////////////////////////
+
+function myFun() {
+        var button = document.getElementById('myNotes');
+        button.style.backgroundColor = '#ff0000'; 
+        button.style.color='black'
+    }
+
+    function myFunction(){
+      let button = document.getElementById('myBtn');
+      button.style.backgroundColor='blue'
+      button.style.color='white'
+      
+      
+    }
     </script>
 </body>
 

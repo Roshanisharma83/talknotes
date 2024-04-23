@@ -7,6 +7,7 @@
 body, html{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: black;
 }
 ul {
     list-style: none;
@@ -218,9 +219,9 @@ hr{
 .note{
     width: 100%;
 }
-.note button{
+.notebtn{
     width: 500px;
-    background-image: linear-gradient(324deg,#a000ff,#ff006f);
+    /* background-image: linear-gradient(324deg,#a000ff,#ff006f); */
     border-radius: 5px;
     padding: 16px 0px;
     margin-top: 15px;
@@ -345,7 +346,20 @@ hr{
     width: 300px ;
    
 }
-.note2btn button{ 
+.note2btnv{
+    width: 300px;
+    /* background-color: #ff006f;
+    background-image: linear-gradient(324deg,#a000ff,#ff006f); */
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin-top: 15px;
+    border: none;
+    color: black;
+    /* box-shadow: 0px 1px 10px 1px #ff006f; */
+    font-weight: 600;
+    font-size: 20px;
+}
+.note2btnv button{ 
     width: 300px;
    
     background-image: linear-gradient(324deg,#a000ff,#ff006f);
